@@ -1,0 +1,340 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #f39c12;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center; /* Center the text */
+    color: white; /* Set text color */
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Effects */
+.jumbotron:hover {
+    filter: brightness(0.9);
+}
+
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.25rem;
+    }
+}
+
+.navbar {
+    background-color: #1B3C3D;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: #ffeb3b;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.handwriting-font {
+    font-family: 'Pacifico', 'Brush Script MT', cursive;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.ad-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.ad {
+    width: 20%;
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 5px 10px;
+    overflow: hidden;
+}
+
+.ad img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.container,
+.container-head {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container-head {
+    background: #1B3C3D;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-container input {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.search-container button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.recipe img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.recipe h2 {
+    font-size: 18px;
+    padding: 10px;
+    color: #333;
+}
+
+.recipe p {
+    padding: 0 10px 10px;
+    color: #555;
+}
+
+.recipe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#recipe-heading {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #recipe-heading {
+        font-size: 2rem;
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Max width for larger screens */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#add-favorite {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-favorite:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-social {
+    margin: 20px 0;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #f39c12;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
